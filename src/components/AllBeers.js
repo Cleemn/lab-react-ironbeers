@@ -14,7 +14,6 @@ class AllBeers extends React.Component {
     axios.get(beersList)
     .then(responseFromApi => {
       this.setState({ beers: responseFromApi.data});
-      console.log(this.state.beers);
     })
     .catch(error => {
       console.log(error);
